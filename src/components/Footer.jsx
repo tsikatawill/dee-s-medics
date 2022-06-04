@@ -4,14 +4,14 @@ import Logo from "./Logo";
 const Footer = () => {
   return (
     <footer className="bg-blue-800 text-slate-300">
-      <div className="container py-5 sm:py-10 flex flex-col md:flex-row justify-between gap-20">
+      <div className="container py-5 sm:py-10 flex flex-col md:flex-row justify-between gap-10 md:gap-20">
         <div className="dee">
           <Logo />
           <p className="mt-5 w-full md:w-52">
             Solution for living a healthy life in an easy and comfortable way.
           </p>
         </div>
-        <div className="flex w-full sm:flex-row flex-col gap-20 justify-between">
+        <div className="flex w-full sm:flex-row flex-col  gap-10 md:gap-20 justify-between">
           <div className="programs">
             <p className="font-bold text-white">Programs</p>
             <ul className="mt-5">

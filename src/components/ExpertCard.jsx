@@ -2,14 +2,12 @@ const ExpertCard = ({ image, name, title, variant }) => {
   return (
     <div
       className={`expert-card bg-white hover:shadow-lg border-4 rounded-3xl shadow-gray-400 ${
-        variant === "news"
-          ? "w-full sm:w-[80%] md:w-full mx-auto"
-          : "w-full lg:w-60"
+        variant === "news" ? "w-full sm:w-[80%] md:w-full mx-auto" : "w-96"
       } `}
     >
       <div
         className={`image-wrapper ${
-          variant === "news" ? "h-72" : "h-60"
+          variant === "news" ? "h-72" : "h-52"
         } rounded-3xl overflow-hidden`}
       >
         <img
