@@ -1,21 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav className="navbar">
-      <div className="container py-5 flex items-center justify-between">
+    <nav className={`navbar ${showMenu && "bg-white fixed w-full top-0"}`}>
+      <div className="container py-5 flex md:items-center justify-between relative z-50">
         <Logo />
-        <ul className="nav-links capitalize flex items-center justify-between gap-5">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About us</li>
-          <li className="cursor-pointer">How it works</li>
-          <li className="cursor-pointer">Doctors</li>
-          <li className="cursor-pointer">Contact us</li>
+        <ul
+          className={`nav-links capitalize flex items-center flex-col absolute md:relative md:flex-row w-full md:w-fit bg-white md:bg-transparent justify-between border-t border-gray-500 md:gap-5  ${
+            showMenu ? "top-full left-0" : "-top-[300px] md:top-0"
+          }`}
+        >
+          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+            Home
+          </li>
+          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+            About us
+          </li>
+          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+            How it works
+          </li>
+          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+            Doctors
+          </li>
+          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+            Contact us
+          </li>
         </ul>
-        <div className="cta">
+        <div className="cta md:inline-flex hidden">
           <button className="btn btn-primary">Get Started</button>
         </div>
+        <button
+          className="toggle md:hidden inline-flex"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <FaBars />
+        </button>
       </div>
     </nav>
   );

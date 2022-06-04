@@ -5,12 +5,12 @@ const UseSection = () => {
     <section className="use">
       <div className="container py-10 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         <div className="left">
-          <div className="image-wrapper rounded-[3rem] border border-gray-400 overflow-hidden">
-            <img src={UseImg} alt="easy.jpg" />
+          <div className="image-wrapper rounded-[3rem] overflow-hidden">
+            <img src={UseImg} alt="easy.jpg" className="hover:scale-110" />
           </div>
         </div>
         <div className="right">
-          <div className="header">
+          <div className="header text-center md:text-left">
             <h2 className="capitalize text-blue-700 text-3xl font-semibold">
               Very Easy way to use
             </h2>
@@ -21,7 +21,7 @@ const UseSection = () => {
           </div>
 
           <div className="steps flex flex-col gap-10 mt-10">
-            <div className="step-card flex gap-2">
+            <div className="step-card flex gap-5">
               <div className="icon rounded-full p-2 text-white bg-red-400 h-fit">
                 <FaCheckDouble />
               </div>
@@ -33,7 +33,7 @@ const UseSection = () => {
                 </p>
               </div>
             </div>
-            <div className="step-card flex gap-2">
+            <div className="step-card flex gap-5">
               <div className="icon rounded-full p-2 text-white bg-orange-400 h-fit">
                 <FaCheckDouble />
               </div>
@@ -45,12 +45,12 @@ const UseSection = () => {
                 </p>
               </div>
             </div>
-            <div className="step-card flex gap-2">
+            <div className="step-card flex gap-5">
               <div className="icon rounded-full p-2 text-white bg-green-400 h-fit">
                 <FaCheckDouble />
               </div>
               <div className="text">
-                <h4>Login or signup</h4>
+                <h4>Search for doctor & book appointment</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                   dolores laboriosam placeat, neque incidunt eius?
