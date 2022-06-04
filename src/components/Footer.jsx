@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "./Logo";
-import SectionWrapper from "./SectionWrapper";
 
 const Footer = () => {
   return (
