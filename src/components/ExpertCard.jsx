@@ -1,19 +1,19 @@
 const ExpertCard = ({ image, name, title, variant }) => {
   return (
     <div
-      className={`expert-card bg-white hover:shadow-lg border-4 rounded-3xl shadow-gray-400 ${
-        variant === "news" ? "w-full sm:w-[80%] md:w-full mx-auto" : "w-96"
+      className={`expert-card bg-white hover:shadow-lg rounded-3xl shadow-gray-400 ${
+        variant === "news" ? "w-full sm:w-[80%] md:w-full mx-auto" : "w-72"
       } `}
     >
       <div
         className={`image-wrapper ${
-          variant === "news" ? "h-72" : "h-52"
-        } rounded-3xl overflow-hidden`}
+          variant === "news" ? "h-72" : "h-52 w-52 sm:h-72 sm:w-72 mx-auto"
+        } rounded-3xl overflow-hidden bg-red-400`}
       >
         <img
           src={image}
-          alt="doctor.jpg"
-          className="object-cover h-full w-full hover:scale-110"
+          alt="doc"
+          className={`hover:scale-110 ${variant === "news" && "w-full h-full"}`}
         />
       </div>
       <div className={`details ${variant !== "news" && "text-center"}  p-5`}>

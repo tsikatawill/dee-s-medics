@@ -19,19 +19,19 @@ const Navbar = () => {
               : "-top-[300px] md:top-0 md:left-0"
           }`}
         >
-          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+          <li className="cursor-pointer hover:bg-slate-200 hover:sm:bg-transparent w-full text-center py-2">
             Home
           </li>
-          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+          <li className="cursor-pointer hover:bg-slate-200 hover:sm:bg-transparent w-full text-center py-2">
             About us
           </li>
-          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+          <li className="cursor-pointer hover:bg-slate-200 hover:sm:bg-transparent w-full text-center py-2">
             How it works
           </li>
-          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+          <li className="cursor-pointer hover:bg-slate-200 hover:sm:bg-transparent w-full text-center py-2">
             Doctors
           </li>
-          <li className="cursor-pointer hover:sm:bg-slate-200 w-full text-center py-2">
+          <li className="cursor-pointer hover:bg-slate-200 hover:sm:bg-transparent w-full text-center py-2">
             Contact us
           </li>
         </ul>
